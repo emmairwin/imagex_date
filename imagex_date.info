@@ -1,0 +1,15 @@
+name = Date
+description = An ImageX feature bundling all date related settings.
+core = 7.x
+package = ImageX
+version = 7.x-1.0
+project = imagex_date
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = date_format_long
+features[variable][] = date_format_medium
+features[variable][] = date_format_short
+project path = profiles/imagex_installkit/modules/imagex/modules
